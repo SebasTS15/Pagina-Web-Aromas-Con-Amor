@@ -1,55 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Tu Página</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Menu -->
-    <nav class="navbar navbar-expand-sm bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../Img/logo.png" alt="Logo" width="80" height="80">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active pe-5" aria-current="page" href="#">INICIO</a>
-              </li>
-              <li class="nav-item pe-5">
-                <a class="nav-link" href="#">CATALOGO</a>
-              </li>
-              <li class="nav-item pe-5">
-                <a class="nav-link" href="#">CONTACTO</a>
-              </li>
+
+    <nav>
+        <div class="nav-container">
+            <h1>Aromas con amor</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="#">Personalizacion</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Carrito</a></li>
             </ul>
-            <ul class="nav navbar-nav ms-auto ">
-                <li class="nav-item">
-                    <a class="nav-link " href="#">
-                        <img src="../Img/carritoCompras.png" alt="CarritoCompras" width="50" height="50">
-                    </a>
-                  </li>
-            </ul>
-          </div>
         </div>
-      </nav>
-      <!-- Carousel -->
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    </nav>
+
+    <!-- <section class="relative h-[500px] flex items-center justify-center bg-cover bg-center text-white" style="background-image: url('https://images.unsplash.com/photo-1599313804992-44e32565fd6d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHNjZW50ZWQlMjBjYW5kbGVzfGVufDB8fDB8fHww');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 text-center px-6">
+            <h2 class="text-5xl font-bold drop-shadow-lg">Encuentra el aroma perfecto</h2>
+            <p class="text-2xl mt-2 drop-shadow-lg">Velas artesanales con esencia y amor</p>
+        </div>
+    </section> -->
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div id="carousel-item-start" class="carousel-item active">
-            <img src="../Img/banner-1.jpg" class="d-block w-100" alt="Banner-1">
+            <img src="../Img/banner-1-beige.jpg" class="d-block w-100" alt="Banner-1">
           </div>
           <div id="carousel-item-start" class="carousel-item">
-            <img src="../Img/banner-2.jpg" class="d-block w-100" alt="Banner-2">
+            <img src="../Img/banner-2-beige.jpg" class="d-block w-100" alt="Banner-2">
           </div>
           <div id="carousel-item-start" class="carousel-item">
-            <img src="../Img/banner-3.jpg" class="d-block w-100" alt="Banner-3">
+            <img src="../Img/banner-3-beige.jpg" class="d-block w-100" alt="Banner-3">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -62,107 +52,105 @@
         </button>
       </div>
 
-      <!-- Content -->
-      <div class="container mb-5 pt-5" style="height: 400px;">
-       <div class="row">
-        <div class="col-lg-6 text-center">
-            <img src="../Img/perfilCreador.png"  class="img-fluid"  alt="Creador"  width="300" height="300">
-        </div>
-        <div class="col-lg-6 my-auto text-center">
-            <h2>Nuestro Concepto</h2>
-            <br>
-            <p class="custom-justify">Aromas con amor tiene como objetivo crear los diseños a base de las necesidades de nuestros clientes, es por eso que puedes contarnos que tipo de ocasión de vela buscas y nosotros te ayudamos.</p>
-        </div>
+    <section class="p-12 text-center bg-marfil">
 
-       </div>
-      </div>
-
-      <!-- Carousel of Concept -->
-       
-      <div id="carouselExampleControls" class="carousel carousel-dark slide mt-5" data-bs-slide="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="cards-wrapper">
-              <div class="card text-center">
-                <div class="card-body">
-                  <h5 class="card-title">RECORDATORIOS</h5>
-                  <p class="card-text">Aniversario, Baby Shower, Bodas, Bautizo.</p>
-                </div>
-              </div>
-              <div class="card text-center py-2">
-                <div class="card-body">
-                  <h5 class="card-title">VELAS CON PROPOSITO</h5>
-                  <p class="card-text">Son especiales para iluminar cada uno de tus deseos, con detalles, color y aroma de elección.</p>
-                </div>
-              </div>
-              <div class="card text-center py-2">
-                <div class="card-body">
-                  <h5 class="card-title">CUMPLEAÑOS</h5>
-                  <p class="card-text">Exclusividad<br>Detalles Unicos</p>
-                </div>
-              </div>
+    <section class="concepto">
+        <div class="contenido">
+            <div class="imagen" style="background-image: url('https://images.unsplash.com/photo-1601479604588-68d9e6d386b5?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+            <div class="texto">
+                <h2>Nuestro Concepto</h2>
+                <p>
+                    Aromas con amor tiene como objetivo crear los diseños a base de las necesidades de nuestros clientes, 
+                    es por eso que puedes contarnos qué tipo de ocasión de vela buscas y nosotros te ayudamos.
+                </p>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="cards-wrapper">
-              <div class="card text-center py-2">
-                <div class="card-body">
-                  <h5 class="card-title">NAVIDEÑA</h5>
-                  <p class="card-text">Luz de fe y esperanza  periodo Decembrino.</p>
-                </div>
-              </div>
-              <div class="card text-center py-2">
-                <div class="card-body">
-                  <h5 class="card-title">DISEÑOS EN CONCRETO</h5>
-                  <p class="card-text">Vela en recipiente a base de concreto. <br> Bases talladas con un toque de color y brillo.</p>
-                </div>
-              </div>
-              <div class="card text-center py-2">
-                <div class="card-body">
-                  <h5 class="card-title">ANCHETA DECORATIVA</h5>
-                  <p class="card-text">Personalizada ideal para sorprender, en una ocasión especial.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
         </div>
+    </section>
+            
 
-        <button id="carousel-control-prev-concept" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button id="carousel-control-next-concept" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    <section class="categorias">
+        <h2>Categorías de velas</h2>
+        <div class="grid">
+            <div class="categoria recordatorios">
+                <h3>RECORDATORIOS</h3>
+                <p>Aniversario, Baby Shower, Bodas, Bautizo.</p>
+            </div>
+            <div class="categoria proposito">
+                <h3>VELAS CON PROPOSITO</h3>
+                <p>Son especiales para iluminar cada uno de tus deseos, con detalles, color y aroma de elección.</p>
+            </div>
+            <div class="categoria cumpleanos">
+                <h3>CUMPLEAÑOS</h3>
+                <p>Exclusividad<br>Detalles Unicos.</p>
+            </div>
+            <div class="categoria navidena">
+                <h3>NAVIDEÑA</h3>
+                <p>Luz de fe y esperanza  periodo Decembrino.</p>
+            </div>
+            <div class="categoria concreto">
+                <h3>DISEÑOS EN CONCRETO</h3>
+                <p>Vela en recipiente a base de concreto. <br> Bases talladas con un toque de color y brillo.</p>
+            </div>
+            <div class="categoria ancheta">
+                <h3>ANCHETA DECORATIVA</h3>
+                <p>Personalizada ideal para sorprender, en una ocasión especial.</p>
+            </div>
+        </div>
+    </section>
 
-      <!-- Footer -->
-      <footer class="mt-5 py-5 text-center">
+    <section class="aromas">
+        <h2>Nuestros Aromas</h2>
+        <div class="lista-aromas">
+            <div class="aroma">
+                <img src="../img/lavanda.png" alt="Lavanda">
+                <p>Lavanda</p>
+            </div>
+            <div class="aroma">
+                <img src="../img/lily_1087452.png" alt="Vainilla">
+                <p>Vainilla</p>
+            </div>
+            <div class="aroma">
+                <img src="../img/spice_4087007.png" alt="Canela">
+                <p>Canela</p>
+            </div>
+            <div class="aroma">
+                <img src="../img/coco.png" alt="Coco">
+                <p>Coco</p>
+            </div>
+            <div class="aroma">
+                <img src="../img/fruit_15676391.png" alt="citricos">
+                <p>Citricos</p>
+            </div>
+            <div class="aroma">
+                <img src="../img/flower_14456274.png" alt="Jazmin">
+                <p>Jazmin</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <h3>Redes</h3>
-              <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Whatsapp</a></li>
-              </ul>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>Redes</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Whatsapp</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Contacto</h3>
+                    <p>Correo electrónico: info@example.com</p>
+                    <p>Teléfono: 123-456-7890</p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Derechos de autor</h3>
+                    <p>&copy; 2025 Aromas con Amor</p>
+                </div>
             </div>
-            <div class="col-lg-4">
-              <h3>Contacto</h3>
-              <p>Correo electrónico: info@example.com</p>
-              <p>Teléfono: 123-456-7890</p>
-            </div>
-            <div class="col-lg-4">
-              <h3>Derechos de autor</h3>
-              <p>(c) 2023 Mi Sitio Web. Todos los derechos reservados.</p>
-            </div>
-          </div>
         </div>
-      </footer>
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>      
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </body>
 </html>

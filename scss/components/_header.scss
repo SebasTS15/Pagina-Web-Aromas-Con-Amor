@@ -1,0 +1,47 @@
+$beige: #F5E8DC;
+$marfil: #FFF8E1;
+$terracota: #D98E73;
+$salvia: #A3B18A;
+$oro: #D4AF37;
+$ambar: #BF6B04;
+
+nav {
+    background-color: $ambar;
+    color: $marfil;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    ul {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+
+        li {
+            a {
+                font-size: 18px;
+                color: $marfil;
+                text-decoration: none;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $oro;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,191 @@
+// colores
+$beige: #F5E8DC;
+$marfil: #FFF8E1;
+$terracota: #D98E73;
+$salvia: #A3B18A;
+$oro: #D4AF37;
+$ambar: #BF6B04;
+
+// Fuente
+$fuente-vintage: 'Cormorant Garamond', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+// Estilos 
+body {
+    background-color: $beige;
+    color: $terracota;
+    font-family: $fuente-vintage;
+}
+
+// Navbar
+
+// Sección de Categorías de Velas
+.categorias {
+    padding: 48px;
+    text-align: center;
+    background-color: $beige;
+
+    h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: $ambar;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
+        max-width: 1000px;
+        margin: 32px auto;
+    }
+
+    .categoria {
+        padding: 24px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0px 4px 6px rgba(198, 174, 174, 0.1);
+        
+        &.recordatorios {
+            background-color: $salvia;
+        }
+
+        &.proposito {
+            background-color: $terracota;
+        }
+
+        &.cumpleanos {
+            background-color: $ambar;
+        }
+
+        &.navidena {
+            background-color: $terracota;
+        }
+
+        &.concreto {
+            background-color: $marfil;
+
+            h3 {
+                color: $ambar;
+            }
+            p {
+                color: $ambar;
+            }
+        }
+
+        &.ancheta {
+            background-color: $salvia;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: bold;
+            color: $marfil;
+        }
+
+        p {
+            margin-top: 8px;
+            color: $beige;
+        }
+    }
+}
+
+// Sección de Aromas
+.aromas {
+    padding: 48px;
+    background-color: $marfil;
+    text-align: center;
+
+    h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: $ambar;
+    }
+
+    .lista-aromas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 24px;
+
+        .aroma {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $ambar;
+            padding: 12px;
+            text-align: center;
+
+            img {
+                width: 48px;
+                height: 48px;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+  
+$bg-marfil: #f5efe6;
+$text-ambar: #b76e00;
+$text-terracota: #a0522d;
+  
+  .concepto {
+    padding: 3rem;
+    text-align: center;
+    background-color: $bg-marfil;
+  
+    .contenido {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+      max-width: 48rem;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+  
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  
+    .imagen {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      margin-left: auto;
+      margin-right: auto;
+  
+      @media (min-width: 768px) {
+        margin-left: 0;
+      }
+    }
+  
+    .texto {
+      h2 {
+        font-size: 1.875rem;
+        font-weight: bold;
+        color: $text-ambar;
+      }
+  
+      p {
+        margin-top: 1rem;
+        font-size: 1.125rem;
+        color: $text-terracota;
+        max-width: 42rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  

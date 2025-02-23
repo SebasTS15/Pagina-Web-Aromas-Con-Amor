@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap");
+body {
+  background-color: #F5E8DC;
+  font-family: "Cormorant Garamond", serif;
+  color: #D98E73;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter {
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF8E1;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  min-width: 250px;
+  max-width: 300px;
+  box-sizing: border-box;
+  min-height: 550px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+body {
+  background-color: #F5E8DC;
+  color: #D98E73;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.categorias {
+  padding: 48px;
+  text-align: center;
+  background-color: #F5E8DC;
+}
+.categorias h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #BF6B04;
+}
+.categorias .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  max-width: 1000px;
+  margin: 32px auto;
+}
+.categorias .categoria {
+  padding: 24px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(198, 174, 174, 0.1);
+}
+.categorias .categoria.recordatorios {
+  background-color: #A3B18A;
+}
+.categorias .categoria.proposito {
+  background-color: #D98E73;
+}
+.categorias .categoria.cumpleanos {
+  background-color: #BF6B04;
+}
+.categorias .categoria.navidena {
+  background-color: #D98E73;
+}
+.categorias .categoria.concreto {
+  background-color: #FFF8E1;
+}
+.categorias .categoria.concreto h3 {
+  color: #BF6B04;
+}
+.categorias .categoria.concreto p {
+  color: #BF6B04;
+}
+.categorias .categoria.ancheta {
+  background-color: #A3B18A;
+}
+.categorias .categoria h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #FFF8E1;
+}
+.categorias .categoria p {
+  margin-top: 8px;
+  color: #F5E8DC;
+}
+
+.aromas {
+  padding: 48px;
+  background-color: #FFF8E1;
+  text-align: center;
+}
+.aromas h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #BF6B04;
+}
+.aromas .lista-aromas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.aromas .lista-aromas .aroma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #BF6B04;
+  padding: 12px;
+  text-align: center;
+}
+.aromas .lista-aromas .aroma img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+}
+.aromas .lista-aromas .aroma p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.concepto {
+  padding: 3rem;
+  text-align: center;
+  background-color: #f5efe6;
+}
+.concepto .contenido {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .concepto .contenido {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.concepto .imagen {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .concepto .imagen {
+    margin-left: 0;
+  }
+}
+.concepto .texto h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #b76e00;
+}
+.concepto .texto p {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #a0522d;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #b76e12;
+  color: #f8f5e1;
+  padding: 20px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+footer .row {
+  width: 100%;
+}
+footer .col-lg-4 {
+  flex: 1;
+  text-align: center;
+}
+footer h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer li {
+  margin-bottom: 5px;
+}
+footer a {
+  color: #f8f5e1;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #BF6B04;
+  color: #FFF8E1;
+  padding: 20px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+nav h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+nav ul li a {
+  font-size: 18px;
+  color: #FFF8E1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #D4AF37;
+}
+
+/*# sourceMappingURL=styles.css.map */
