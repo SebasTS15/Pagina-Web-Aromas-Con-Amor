@@ -2,7 +2,7 @@
 body {
   background-color: #F5E8DC;
   color: #D98E73;
-  font-family: "Cormorant Garamond", serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 nav {
@@ -12,12 +12,13 @@ nav {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 nav .nav-container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  height: 60px;
 }
 nav h1 {
   font-size: 24px;
@@ -58,7 +59,10 @@ nav ul li a:hover {
 .categorias .categoria {
   padding: 24px;
   text-align: center;
+  display: grid;
+  place-items: center;
   border-radius: 12px;
+  min-height: 180px;
   box-shadow: 0px 4px 6px rgba(198, 174, 174, 0.1);
 }
 .categorias .categoria.recordatorios {
@@ -81,6 +85,7 @@ nav ul li a:hover {
 }
 .categorias .categoria.concreto p {
   color: #BF6B04;
+  font-size: 18px;
 }
 .categorias .categoria.ancheta {
   background-color: #A3B18A;
@@ -93,6 +98,7 @@ nav ul li a:hover {
 .categorias .categoria p {
   margin-top: 8px;
   color: #F5E8DC;
+  font-size: 18px;
 }
 
 .aromas {
@@ -170,7 +176,7 @@ nav ul li a:hover {
 .concepto {
   padding: 3rem;
   text-align: center;
-  background-color: #f5efe6;
+  background-color: #FFF8E1;
 }
 .concepto .contenido {
   display: grid;
@@ -188,8 +194,8 @@ nav ul li a:hover {
   }
 }
 .concepto .imagen {
-  width: 12rem;
-  height: 12rem;
+  width: 17rem;
+  height: 15rem;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -204,12 +210,12 @@ nav ul li a:hover {
 .concepto .texto h2 {
   font-size: 1.875rem;
   font-weight: bold;
-  color: #b76e00;
+  color: #BF6B04;
 }
 .concepto .texto p {
   margin-top: 1rem;
   font-size: 1.125rem;
-  color: #a0522d;
+  color: #D98E73;
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
