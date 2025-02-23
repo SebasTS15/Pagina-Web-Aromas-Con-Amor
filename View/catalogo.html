@@ -39,9 +39,10 @@
             </div>
         </div>
     </nav>
-
+    <!-- Final del menú-->
+     
      <!-- Panel lateral derecho Carrito de Compras-->
-     <div class="offcanvas offcanvas-end" tabindex="-1" id="panelLateral" aria-labelledby="tituloPanel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="panelLateral" aria-labelledby="tituloPanel">
         <div class="offcanvas-header">
             <h5 id="tituloPanel" class="offcanvas-title">Tu Carrito</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
@@ -85,6 +86,7 @@
         </div>
         
     </div>
+    <!-- Final del panel lateral -->
 
     <section>
         <div class="container text-center">
@@ -115,10 +117,39 @@
                         <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
                             asperiores recusandae alias quidem suscipit repellat, harum labore earum cumque ipsa?
                             Pariatur voluptatibus delectus voluptate architecto qui sed dolorum hic ex!</p>
-                        <a href="#" class="btn btn-secondary">Agregar</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-example">Agregar</button>
                     </div>
                 </div>
             </div>
+
+            <!-- Modal Star-->
+            <div class="modal fade" id="modal-example" tabindex="-1" aria-labelledby="label-modal-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header border-5">
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="../Img/Vela_Amor_Amistad.jpg" alt="..." class="img-fluid rounded mx-auto d-block" style="max-width: 70%;">
+                            <p class="mt-1"> Vela Amor y Amistad</p>
+                            <p class="mt-2 text-break">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+                                asperiores recusandae alias quidem suscipit repellat, harum labore earum cumque ipsa?
+                                Pariatur voluptatibus delectus voluptate architecto qui sed dolorum hic ex!</p>
+                                <div class="input-group justify-content-center">
+                                    <button class="btn btn-outline-secondary" type="button" id="btn-minus">−</button>
+                                    <input type="text" class="form-control text-center" value="1" id="quantity" style="max-width: 50px;">
+                                    <button class="btn btn-outline-secondary" type="button" id="btn-plus">+</button>
+                                </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal End-->
+
             <div class="col">
                 <div class="card text-center">
                     <img src="../Img/vela-dia-mujer.jpeg" class="card-img-top rounded-2" alt="Vela-Dia-Mujer">
