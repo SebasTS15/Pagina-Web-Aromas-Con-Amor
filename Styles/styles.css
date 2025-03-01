@@ -295,7 +295,7 @@ footer a:hover {
   }
 }
 .navbar {
-  height: 100px;
+  min-height: 100px;
   background-color: #BF6B04;
   color: #FFF8E1;
   padding: 20px 0;
@@ -315,48 +315,6 @@ footer a:hover {
   color: #D4AF37;
 }
 
-nav {
-  background-color: #BF6B04;
-  color: #FFF8E1;
-  padding: 20px 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-nav .nav-container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-nav h1 {
-  font-size: 24px;
-  font-weight: bold;
-}
-nav ul {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-}
-nav ul li a {
-  font-size: 18px;
-  color: #FFF8E1;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-nav ul li a:hover {
-  color: #D4AF37;
-}
-
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 2%;
-  }
-}
 button {
   background-color: #D98E73;
   border: 0px;

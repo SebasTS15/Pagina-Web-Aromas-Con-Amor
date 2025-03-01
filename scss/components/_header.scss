@@ -7,7 +7,7 @@ $ambar: #BF6B04;
 
 
 .navbar{
-    height: 100px;
+    min-height: 100px;
     background-color: $ambar;
     color: $marfil;
     padding: 20px 0;
@@ -29,52 +29,52 @@ $ambar: #BF6B04;
         }
     }
 }
-nav {
-    background-color: $ambar;
-    color: $marfil;
-    padding: 20px 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+// nav {
+//     background-color: $ambar;
+//     color: $marfil;
+//     padding: 20px 0;
+//     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
-    .nav-container {
-        width: 100%;
-        max-width: 100%;//1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 24px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
+//     .nav-container {
+//         width: 100%;
+//         max-width: 100%;//1200px;
+//         margin: 0 auto;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding: 0 24px;
+//         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+//     }
 
-    h1 {
-        font-size: 24px;
-        font-weight: bold;
-    }
+//     h1 {
+//         font-size: 24px;
+//         font-weight: bold;
+//     }
 
-    ul {
-        display: flex;
-        gap: 24px;
-        list-style: none;
+//     ul {
+//         display: flex;
+//         gap: 24px;
+//         list-style: none;
 
-        li {
-            a {
-                font-size: 18px;
-                color: $marfil;
-                text-decoration: none;
-                transition: color 0.3s;
+//         li {
+//             a {
+//                 font-size: 18px;
+//                 color: $marfil;
+//                 text-decoration: none;
+//                 transition: color 0.3s;
 
-                &:hover {
-                    color: $oro;
-                }
-            }
-        }
-    }
-}
+//                 &:hover {
+//                     color: $oro;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column; // Para que los elementos no se desborden
-        text-align: center;
-        padding: 10px 2%;
-    }
-}
+// @media (max-width: 768px) {
+//     .nav-container {
+//         flex-direction: column; // Para que los elementos no se desborden
+//         text-align: center;
+//         padding: 10px 2%;
+//     }
+// }
