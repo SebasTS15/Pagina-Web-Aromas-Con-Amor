@@ -2,6 +2,7 @@ footer {
     background-color: #b76e12; 
     color: #f8f5e1; 
     padding: 20px 0;
+    margin-top: 20px;
     
     .container {
       display: flex;
@@ -41,4 +42,11 @@ footer {
         text-decoration: underline;
       }
     }
+}
+
+@media (max-width: 768px) {
+  footer {
+      display: block;
+      padding: 15px 2%;
+  }
 }

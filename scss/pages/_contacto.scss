@@ -1,0 +1,52 @@
+$beige: #F5E8DC;
+$marfil: #FFF8E1;
+$terracota: #D98E73;
+$salvia: #A3B18A;
+$oro: #D4AF37;
+$ambar: #BF6B04;
+
+$fuente-vintage: 'Cormorant Garamond', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+
+body {
+  background-color: $beige;
+  font-family: $fuente-vintage;
+  color: $terracota;
+  margin: 0;
+  padding: 0;
+}
+
+#container-form{
+    max-width: 600px;
+    width: 90%;
+    display: block;
+    background-color: $marfil;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    
+}
+
+.form-control{
+    background-color: $marfil ;
+    border-color: $beige;
+}
+// @media (max-width: 1300px) {
+//     #container-form {
+//       width: //calc(50% - 20px); 
+//     }
+//   }
+
+@media (max-width: 768px) {
+    #container-form {
+      width: 80%//calc(50% - 20px); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #container-form {
+      width: 95%; 
+    }
+  }

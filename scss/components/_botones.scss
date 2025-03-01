@@ -1,0 +1,20 @@
+$beige: #F5E8DC;
+$marfil: #FFF8E1;
+$terracota: #D98E73;
+$salvia: #A3B18A;
+$oro: #D4AF37;
+$ambar: #BF6B04;
+
+
+button{
+    background-color: $terracota; 
+    border: 0px ; 
+    color: white; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $ambar;
+    }
+}

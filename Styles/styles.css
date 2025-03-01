@@ -1,5 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap");
+body {
+  background-color: #F5E8DC;
+  font-family: "Cormorant Garamond", serif;
+  color: #D98E73;
+  margin: 0;
+  padding: 0;
+}
+
+#container-form {
+  max-width: 600px;
+  width: 90%;
+  display: block;
+  background-color: #FFF8E1;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.form-control {
+  background-color: #FFF8E1;
+  border-color: #F5E8DC;
+}
+
+@media (max-width: 768px) {
+  #container-form {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  #container-form {
+    width: 95%;
+  }
+}
 body {
   background-color: #F5E8DC;
   font-family: "Cormorant Garamond", serif;
@@ -220,6 +254,7 @@ footer {
   background-color: #b76e12;
   color: #f8f5e1;
   padding: 20px 0;
+  margin-top: 20px;
 }
 footer .container {
   display: flex;
@@ -253,6 +288,33 @@ footer a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  footer {
+    display: block;
+    padding: 15px 2%;
+  }
+}
+.navbar {
+  height: 100px;
+  background-color: #BF6B04;
+  color: #FFF8E1;
+  padding: 20px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar a {
+  font-size: 18px;
+  color: #FFF8E1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #D4AF37;
+}
+
 nav {
   background-color: #BF6B04;
   color: #FFF8E1;
@@ -260,7 +322,8 @@ nav {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 nav .nav-container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -285,6 +348,25 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #D4AF37;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 2%;
+  }
+}
+button {
+  background-color: #D98E73;
+  border: 0px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #BF6B04;
 }
 
 /*# sourceMappingURL=styles.css.map */
