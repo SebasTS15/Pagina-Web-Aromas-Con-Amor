@@ -49,6 +49,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: $marfil;
+    justify-content: space-between;
     border-radius: 12px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -56,8 +57,22 @@ body {
     min-width: 250px;
     max-width: 300px;
     box-sizing: border-box;
-    min-height: 550px;
+    height: 550px;
   
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+  
+      a.btn {
+        margin-top: auto;
+        background-color: #D4AF37;
+        font-size: 18px;
+        border: 0;
+      }
+    
+    }
+
     img {
       width: 100%;
       height: auto;
@@ -72,6 +87,8 @@ body {
 
   }
 
+ 
+
   @media (max-width: 768px) {
     .card {
       width: calc(50% - 20px); 
@@ -81,6 +98,15 @@ body {
   @media (max-width: 480px) {
     .card {
       width: 100%; 
+    }
+  }
+  
+  .btn-primary {
+    background-color:#D4AF37 ; 
+    border:0;  
+    &:hover {
+      background-color: darken($oro, 10%) !important;
+      border-color: darken($oro, 10%) !important;
     }
   }
   

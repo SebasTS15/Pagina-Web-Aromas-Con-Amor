@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap");
 body {
   background-color: #F5E8DC;
   font-family: "Cormorant Garamond", serif;
   color: #D98E73;
   margin: 0;
   padding: 0;
-  font-size: 18px;
 }
 
 #container-form {
@@ -91,8 +91,6 @@ body {
 .card .card-body a.btn {
   margin-top: auto;
   background-color: #D4AF37;
-  font-size: 18px;
-  border: 0;
 }
 .card img {
   width: 100%;
@@ -116,17 +114,8 @@ body {
     width: 100%;
   }
 }
-.btn-primary {
-  background-color: #D4AF37;
-  border: 0;
-}
-.btn-primary:hover {
-  background-color: rgb(177.7777777778, 144.8888888889, 38.2222222222) !important;
-  border-color: rgb(177.7777777778, 144.8888888889, 38.2222222222) !important;
-}
-
 body {
-  background-color: #FFF8E1;
+  background-color: #F5E8DC;
   color: #D98E73;
   font-family: "Cormorant Garamond", serif;
 }

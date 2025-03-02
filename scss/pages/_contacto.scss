@@ -7,7 +7,6 @@ $ambar: #BF6B04;
 
 $fuente-vintage: 'Cormorant Garamond', serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap');
 
 
 body {
@@ -16,6 +15,7 @@ body {
   color: $terracota;
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 #container-form{
